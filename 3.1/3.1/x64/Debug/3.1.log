@@ -1,0 +1,4 @@
+﻿  3_1.cpp
+C:\Users\Admin\Desktop\unik\3.1\3.1\3_1.cpp(9,12): warning C4101: 'B': unreferenced local variable
+C:\Users\Admin\Desktop\unik\3.1\3.1\3_1.cpp(8,12): warning C4101: 'A': unreferenced local variable
+  3.1.vcxproj -> C:\Users\Admin\Desktop\unik\3.1\x64\Debug\3.1.exe
