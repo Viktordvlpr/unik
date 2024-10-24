@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\unik\\5_3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90C4AB53-2651-46BF-89E0-018A6E413035}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\5_3\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{90C4AB53-2651-46BF-89E0-018A6E413035}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{362FA856-7268-4471-A38A-034B17698197}|5_3\\5_3.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\5_3\\5_3\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{362FA856-7268-4471-A38A-034B17698197}|5_3\\5_3.vcxproj|solutionrelative:5_3\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\5_3\\UnitTest1\\UnitTest1.cpp",
+              "RelativeDocumentMoniker": "UnitTest1\\UnitTest1.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\5_3\\UnitTest1\\UnitTest1.cpp",
+              "RelativeToolTip": "UnitTest1\\UnitTest1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-23T19:59:52.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\5_3\\5_3\\Source.cpp",
+              "RelativeDocumentMoniker": "5_3\\Source.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\5_3\\5_3\\Source.cpp",
+              "RelativeToolTip": "5_3\\Source.cpp",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-23T19:59:07.018Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

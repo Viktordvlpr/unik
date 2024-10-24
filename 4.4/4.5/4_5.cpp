@@ -21,11 +21,11 @@ int main() {
     for (double x = x_poch; x <= x_end; x += dx) {
         double y = 0;
 
-        // перша дуга
+
         if (x >= -2 * R1 - R1 && x <= 0) {
             y = sqrt(R1 * R1 - pow(x + R1, 2));
         }
-        // друга дуга
+
         else if (x >= 0 && x <= 2 * R2) {
             y = -R2 + sqrt(R2 * R2 - pow(x - R2, 2));
         }
