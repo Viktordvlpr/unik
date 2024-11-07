@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\unik\\6_2_rek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FB89F7A-B9A1-4B4D-98EE-85B11DD0D138}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_2_rek\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1FB89F7A-B9A1-4B4D-98EE-85B11DD0D138}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{129A236C-C376-47C2-983B-26007EEF7C12}|6_2_rek\\6_2_rek.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_2_rek\\6_2_rek\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{129A236C-C376-47C2-983B-26007EEF7C12}|6_2_rek\\6_2_rek.vcxproj|solutionrelative:6_2_rek\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB89F7A-B9A1-4B4D-98EE-85B11DD0D138}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_2_rek\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1FB89F7A-B9A1-4B4D-98EE-85B11DD0D138}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\6_2_rek\\UnitTest1\\UnitTest1.cpp",
               "RelativeDocumentMoniker": "UnitTest1\\UnitTest1.cpp",
@@ -35,7 +35,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\6_2_rek\\6_2_rek\\Source.cpp",
               "RelativeDocumentMoniker": "6_2_rek\\Source.cpp",

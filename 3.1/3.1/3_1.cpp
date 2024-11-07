@@ -1,42 +1,41 @@
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
 int main() {
-    
-        double x; // вхідний параметр
-        double y; // результат обчислення виразу
-        double A; // проміжний результат - функціонально стала частина виразу
-        double B; // проміжний результат - функціонально змінна частина виразу
+    double x, y, A, B;
+    cout << "x = ";  cin >> x;
 
-    cout << "x = ";
-    cin >> x;
+    A = 2 * abs(x - 5);
 
-    // скорочена форма
-    if (x <= -1) {
-        y = exp(0.4 + x);
+    // спосіб 1: розгалуження в скороченій формі
+    if (x < -1) {
+        B = pow(sin(x), 2) / (1 + abs(cos(x)));
     }
-    else if (x > -1 && x < 1) {
-        y = 13.5 - 2 * x - (1 - sin(x) * sin(x));
+    if (x >= -1 && x <= 1) {
+        B = pow(cos(x), 2) * (1 / abs(x + 2));
     }
-    else { // x >= 1
-        y = cos(x) / (1 + sin(x) * sin(x));
+    if (x > 1) {
+        B = log(abs(x + 2));
     }
+    y = A - B;
 
-    cout << "1) y = " << y << endl;
+    cout << endl;
+    cout << "1)y = " << y << endl;
 
-    // повна форма
-    if (x <= -1) {
-        y = exp(0.4 + x);
+    // спосіб 2: розгалуження в повній формі
+    if (x < -1) {
+        B = pow(sin(x), 2) / (1 + abs(cos(x)));
     }
-    else if (x >= 1) {
-        y = cos(x) / (1 + sin(x) * sin(x));
+    else if (x >= -1 && x <= 1) {
+        B = pow(cos(x), 2) * (1 / abs(x + 2));
     }
-    else { 
-        y = 13.5 - 2 * x - (1 - sin(x) * sin(x));
+    else if (x > 1) {
+        B = log(abs(x + 2));
     }
+    y = A - B;
 
-    cout << "2) y = " << y << endl;
-
+    cout << "2)y = " << y << endl;
     return 0;
 }

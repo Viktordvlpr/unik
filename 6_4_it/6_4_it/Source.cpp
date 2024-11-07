@@ -1,28 +1,18 @@
 #include <iostream>
-#include <iomanip>
-#include <cmath> 
+#include <cmath>
+#include <time.h>
+
 using namespace std;
 
 
-double* CreateArray(int size) {
-    double* arr = new double[size];
+void CreateArray(double* arr, const int size, const int Low, const int High) {
     for (int i = 0; i < size; i++) {
-        cout << "arr[" << i << "] = ";
-        cin >> arr[i];
+        arr[i] = Low + rand() % (High - Low + 1) + (rand() % 100) / 100.0;
     }
-    return arr;
 }
 
 
-void PrintArray(double* arr, int size) {
-    for (int i = 0; i < size; i++) {
-        cout << setw(8) << arr[i];
-    }
-    cout << endl;
-}
-
-// 1.1
-int CountElementsLessThanC(double* arr, int size, double C) {
+int CountLessThanC(const double* arr, const int size, const double C) {
     int count = 0;
     for (int i = 0; i < size; i++) {
         if (arr[i] < C) {
@@ -32,89 +22,101 @@ int CountElementsLessThanC(double* arr, int size, double C) {
     return count;
 }
 
-// 1.2
-double SumOfIntegersAfterLastNegative(double* arr, int size) {
+
+int SumAfterLastNegative(const double* arr, const int size) {
+    int sum = 0;
     int lastNegativeIndex = -1;
     for (int i = 0; i < size; i++) {
         if (arr[i] < 0) {
             lastNegativeIndex = i;
         }
     }
-
-    double sum = 0;
-    for (int i = lastNegativeIndex + 1; i < size; i++) {
-        sum += floor(arr[i]);
+    if (lastNegativeIndex != -1) {
+        for (int i = lastNegativeIndex + 1; i < size; i++) {
+            sum += (int)arr[i];
+        }
     }
     return sum;
 }
 
 
-double FindMaxElement(double* arr, int size) {
+void TransformArray(double* arr, const int size) {
     double maxElement = arr[0];
     for (int i = 1; i < size; i++) {
         if (arr[i] > maxElement) {
             maxElement = arr[i];
         }
     }
-    return maxElement;
-}
 
-// 2
-void TransformArray(double* arr, int size) {
-    double maxElement = FindMaxElement(arr, size);
-    double threshold = maxElement * 0.20;
-
-    double* tempArray = new double[size]; 
+    double* temp = new double[size];
     int j = 0;
 
 
     for (int i = 0; i < size; i++) {
-        if (abs(arr[i] - maxElement) <= threshold) {
-            tempArray[j++] = arr[i];
+        if (fabs(arr[i] - maxElement) / maxElement <= 0.2) {
+            temp[j++] = arr[i];
         }
     }
 
 
     for (int i = 0; i < size; i++) {
-        if (abs(arr[i] - maxElement) > threshold) {
-            tempArray[j++] = arr[i];
+        if (fabs(arr[i] - maxElement) / maxElement > 0.2) {
+            temp[j++] = arr[i];
         }
     }
 
-
     for (int i = 0; i < size; i++) {
-        arr[i] = tempArray[i];
+        arr[i] = temp[i];
     }
 
-    delete[] tempArray;
+    delete[] temp;
 }
 
 int main() {
+    srand((unsigned)time(NULL));
+
     int n;
     double C;
-
-
-    cout << "Enter n: ";
+    cout << "Enter the size of the array (n): ";
     cin >> n;
-    cout << "Enter C: ";
+    cout << "Enter the value of C: ";
     cin >> C;
 
+    if (n <= 0) {
+        cout << "Size must be positive." << endl;
+        return 1;
+    }
 
-    double* arr = CreateArray(n);
+    double* arr = new double[n];
+    int Low = -10;
+    int High = 10;
 
+    CreateArray(arr, n, Low, High);
 
     cout << "Original array: ";
-    PrintArray(arr, n);
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
-    int countLessThanC = CountElementsLessThanC(arr, n, C);
-    cout << "Number of elements less than C: " << countLessThanC << endl;
+    // 1.1. 
+    int count = CountLessThanC(arr, n, C);
+    cout << "Count of elements less than C: " << count << endl;
 
-    double sumIntegersAfterLastNegative = SumOfIntegersAfterLastNegative(arr, n);
-    cout << "Sum of integer parts after the last negative element: " << sumIntegersAfterLastNegative << endl;
+
+    int sum = SumAfterLastNegative(arr, n);
+    cout << "Sum of integer parts after last negative element: " << sum << endl;
+
+    // 2. 
     TransformArray(arr, n);
+
     cout << "Transformed array: ";
-    PrintArray(arr, n);
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
     delete[] arr;
+
     return 0;
 }

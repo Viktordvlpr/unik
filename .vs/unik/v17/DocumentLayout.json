@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\unik\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\unik\\labs\\2.1\\2.1\\2_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:labs\\2.1\\2.1\\2_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\unik\\labs\\2_2\\2_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:labs\\2_2\\2_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "2_1.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\labs\\2.1\\2.1\\2_1.cpp",
+              "RelativeDocumentMoniker": "labs\\2.1\\2.1\\2_1.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\labs\\2.1\\2.1\\2_1.cpp",
+              "RelativeToolTip": "labs\\2.1\\2.1\\2_1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-24T07:22:50.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CppProperties.json",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\CppProperties.json",
               "RelativeDocumentMoniker": "CppProperties.json",
@@ -34,20 +51,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "2_2.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\labs\\2_2\\2_2.cpp",
               "RelativeDocumentMoniker": "labs\\2_2\\2_2.cpp",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\labs\\2_2\\2_2.cpp",
               "RelativeToolTip": "labs\\2_2\\2_2.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-26T10:58:24.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-09-26T10:58:24.381Z"
             }
           ]
         }

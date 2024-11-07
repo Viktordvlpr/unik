@@ -17,7 +17,7 @@ int main() {
 
     // скорочена форма
     if (x < 0 && b != 0) {
-        F = (a * x * x - b * x * x) / (x - a);
+        F = (a * x * x - b * x * x);
     }
     else if (x > 0 && b == 0) {
         F = (x - a) / (x - c);
@@ -29,7 +29,7 @@ int main() {
 
     // повна форма
     if (x < 0 && b != 0) {
-        F = (a * x * x - b * x * x) / (x - a);
+        F = (a * x * x - b * x * x);
     }
     else {
         if (x > 0 && b == 0) {

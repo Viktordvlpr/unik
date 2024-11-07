@@ -1,105 +1,148 @@
 #include <iostream>
-#include <iomanip>
-#include <vector>
-#include <algorithm> 
+#include <cmath>
+#include <time.h>
+
+using namespace std;
 
 
-void createArray(std::vector<double>& arr, int n) {
-    std::cout << "Введіть " << n << " елементів масиву:" << std::endl;
-    for (int i = 0; i < n; ++i) {
-        std::cin >> arr[i];
-    }
-}
-
-
-void printArray(const std::vector<double>& arr) {
-    for (double el : arr) {
-        std::cout << std::fixed << std::setprecision(2) << el << " ";
-    }
-    std::cout << std::endl;
-}
-
-
-int countLessThanC(const std::vector<double>& arr, double C, int index) {
-    if (index >= arr.size()) {
-        return 0;
-    }
-    return (arr[index] < C ? 1 : 0) + countLessThanC(arr, C, index + 1);
-}
-
-
-double sumIntegerPartsAfterLastNegative(const std::vector<double>& arr, int index) {
-    if (index < 0) {
-        return 0;
-    }
-    if (arr[index] < 0) {
-        double sum = 0;
-        for (int i = index + 1; i < arr.size(); ++i) {
-            sum += static_cast<int>(arr[i]);
-        }
-        return sum;
-    }
-    return sumIntegerPartsAfterLastNegative(arr, index - 1);
-}
-
-
-void rearrangeArray(std::vector<double>& arr, double maxElement, int index, int& newSize) {
-    if (index >= arr.size()) {
+void CreateArrayRecursive(double* arr, const int size, const int Low, const int High, int index = 0) {
+    if (index == size) {
         return;
     }
-
-    if (arr[index] >= maxElement * 0.8 && arr[index] <= maxElement * 1.2) {
-        arr[newSize++] = arr[index];
-    }
-
-    rearrangeArray(arr, maxElement, index + 1, newSize);
-
-    if (!(arr[index] >= maxElement * 0.8 && arr[index] <= maxElement * 1.2)) {
-        arr[newSize++] = arr[index];
-    }
+    arr[index] = Low + rand() % (High - Low + 1) + (rand() % 100) / 100.0;
+    CreateArrayRecursive(arr, size, Low, High, index + 1);
 }
 
 
+int CountLessThanCRecursive(const double* arr, const int size, const double C) {
+    if (size == 0) {
+        return 0;
+    }
+    int count = (arr[0] < C) ? 1 : 0;
+    return count + CountLessThanCRecursive(arr + 1, size - 1, C);
+}
+
+
+int FindLastNegativeIndexRecursive(const double* arr, const int size, int currentIndex = 0) {
+    if (currentIndex == size) {
+        return -1;
+    }
+    int lastNegativeIndex = FindLastNegativeIndexRecursive(arr, size, currentIndex + 1);
+    if (arr[currentIndex] < 0 && lastNegativeIndex == -1) {
+        return currentIndex;
+    }
+    return lastNegativeIndex;
+}
+
+int SumAfterLastNegativeRecursive(const double* arr, const int size, int currentIndex, int sum = 0) {
+    if (currentIndex == size) {
+        return sum;
+    }
+    return SumAfterLastNegativeRecursive(arr, size, currentIndex + 1, sum + (int)arr[currentIndex]);
+}
+
+
+double FindMaxRecursive(const double* arr, const int size, int index = 0, double maxElement = -1e9) {
+    if (index == size) {
+        return maxElement;
+    }
+    if (arr[index] > maxElement) {
+        maxElement = arr[index];
+    }
+    return FindMaxRecursive(arr, size, index + 1, maxElement);
+}
+
+void CopyElementsWithinThresholdRecursive(double* arr, double* temp, const double maxElement, const int size, int& j, int index = 0) {
+    if (index == size) {
+        return;
+    }
+    if (fabs(arr[index] - maxElement) / maxElement <= 0.2) {
+        temp[j++] = arr[index];
+    }
+    CopyElementsWithinThresholdRecursive(arr, temp, maxElement, size, j, index + 1);
+}
+
+void CopyOtherElementsRecursive(double* arr, double* temp, const double maxElement, const int size, int& j, int index = 0) {
+    if (index == size) {
+        return;
+    }
+    if (fabs(arr[index] - maxElement) / maxElement > 0.2) {
+        temp[j++] = arr[index];
+    }
+    CopyOtherElementsRecursive(arr, temp, maxElement, size, j, index + 1);
+}
+
+
+void CopyArrayRecursive(double* arr, double* temp, const int size, int index = 0) {
+    if (index == size) {
+        return;
+    }
+    arr[index] = temp[index];
+    CopyArrayRecursive(arr, temp, size, index + 1);
+}
+
+void TransformArrayRecursive(double* arr, const int size) {
+    double maxElement = FindMaxRecursive(arr, size);
+    double* temp = new double[size];
+    int j = 0;
+
+
+    CopyElementsWithinThresholdRecursive(arr, temp, maxElement, size, j);
+
+
+    CopyOtherElementsRecursive(arr, temp, maxElement, size, j);
+
+
+    CopyArrayRecursive(arr, temp, size);
+
+    delete[] temp;
+}
+
 int main() {
-    setlocale(LC_ALL, "ru_RU.UTF-8");
+    srand((unsigned)time(NULL));
+
     int n;
     double C;
+    cout << "Enter the size of the array (n): ";
+    cin >> n;
+    cout << "Enter the value of C: ";
+    cin >> C;
+
+    if (n <= 0) {
+        cout << "Size must be positive." << endl;
+        return 1;
+    }
+
+    double* arr = new double[n];
+    int Low = -10;
+    int High = 10;
 
 
-    std::cout << "Введіть розмір масиву (n): ";
-    std::cin >> n;
+    CreateArrayRecursive(arr, n, Low, High);
 
-    std::vector<double> arr(n);
+    cout << "Original array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
+    // 1.1
+    int count = CountLessThanCRecursive(arr, n, C);
+    cout << "Count of elements less than C: " << count << endl;
+    // 1.2
+    int lastNegativeIndex = FindLastNegativeIndexRecursive(arr, n);
+    int sum = SumAfterLastNegativeRecursive(arr, n, lastNegativeIndex + 1);
+    cout << "Sum of integer parts after last negative element: " << sum << endl;
+    // 2.
+    TransformArrayRecursive(arr, n);
 
-    createArray(arr, n);
+    cout << "Transformed array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
-
-    std::cout << "Масив: ";
-    printArray(arr);
-
-
-    std::cout << "Введіть значення C: ";
-    std::cin >> C;
-
-
-    int count = countLessThanC(arr, C, 0);
-    std::cout << "Кількість елементів, менших " << C << ": " << count << std::endl;
-
-
-    double sum = sumIntegerPartsAfterLastNegative(arr, n - 1);
-    std::cout << "Сума цілих частин елементів після останнього від'ємного: " << sum << std::endl;
-
-
-    double maxElement = *std::max_element(arr.begin(), arr.end());
-
-
-    int newSize = 0;
-    rearrangeArray(arr, maxElement, 0, newSize);
-
-
-    std::cout << "Модифікований масив: ";
-    printArray(std::vector<double>(arr.begin(), arr.begin() + newSize));
+    delete[] arr;
 
     return 0;
 }

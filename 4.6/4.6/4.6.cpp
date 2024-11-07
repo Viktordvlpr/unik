@@ -1,61 +1,58 @@
 #include <iostream>
-#include <cmath>  
+#include <cmath>
 using namespace std;
 
 int main() {
-    double P, numerator, denominator;
-    int i, k;
 
-    P = 1.0;
+    int i, k;
+    double P, E;
+    P = 1;
     i = 1;
+
     while (i <= 3) {
         k = 1;
         while (k <= 4 - i) {
-            numerator = pow(sin(i * k), 2) + pow(cos(i * k), 2);
-            denominator = pow(k, 2) + pow(i, 2);
-            P *= numerator / denominator;
+            E = (sin(i * k * k) + cos(k * i * i)) / (k * k + i * i);
+            P *= E;
             k++;
         }
         i++;
     }
-    cout << "while" << endl << P << endl;
+    cout << "P = " << P << endl;
 
 
-    P = 1.0;
+    P = 1;
     i = 1;
     do {
         k = 1;
         do {
-            numerator = pow(sin(i * k), 2) + pow(cos(i * k), 2);
-            denominator = pow(k, 2) + pow(i, 2);
-            P *= numerator / denominator;
+            E = (sin(i * k * k) + cos(k * i * i)) / (k * k + i * i);
+            P *= E;
             k++;
         } while (k <= 4 - i);
         i++;
     } while (i <= 3);
-    cout << "do-while" << endl << P << endl;
+    cout << "P = " << P << endl;
 
 
-    P = 1.0;
+    P = 1;
     for (i = 1; i <= 3; i++) {
         for (k = 1; k <= 4 - i; k++) {
-            numerator = pow(sin(i * k), 2) + pow(cos(i * k), 2);
-            denominator = pow(k, 2) + pow(i, 2);
-            P *= numerator / denominator;
+            E = (sin(i * k * k) + cos(k * i * i)) / (k * k + i * i);
+            P *= E;
         }
     }
-    cout << "for n++" << endl << P << endl;
+    cout << "P = " << P << endl;
 
 
-    P = 1.0;
+    P = 1;
     for (i = 3; i >= 1; i--) {
         for (k = 4 - i; k >= 1; k--) {
-            numerator = pow(sin(i * k), 2) + pow(cos(i * k), 2);
-            denominator = pow(k, 2) + pow(i, 2);
-            P *= numerator / denominator;
+            E = (sin(i * k * k) + cos(k * i * i)) / (k * k + i * i);
+            P *= E;
         }
     }
-    cout << "n--" << endl << P << endl;
+    cout << "P = " << P << endl;
 
     return 0;
 }

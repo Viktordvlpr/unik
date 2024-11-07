@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\unik\\6_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36439EB1-4998-4A58-B39F-FB052F1785FD}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_1\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36439EB1-4998-4A58-B39F-FB052F1785FD}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{976BF4EA-5F50-4709-8F9E-41B7476F285B}|6_1\\6_1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_1\\6_1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{976BF4EA-5F50-4709-8F9E-41B7476F285B}|6_1\\6_1.vcxproj|solutionrelative:6_1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36439EB1-4998-4A58-B39F-FB052F1785FD}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_1\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36439EB1-4998-4A58-B39F-FB052F1785FD}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\6_1\\UnitTest1\\UnitTest1.cpp",
               "RelativeDocumentMoniker": "UnitTest1\\UnitTest1.cpp",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\6_1\\UnitTest1\\UnitTest1.cpp",
               "RelativeToolTip": "UnitTest1\\UnitTest1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T21:28:04.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\6_1\\6_1\\Source.cpp",
               "RelativeDocumentMoniker": "6_1\\Source.cpp",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\6_1\\6_1\\Source.cpp",
               "RelativeToolTip": "6_1\\Source.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T21:27:06.116Z",
               "EditorCaption": ""

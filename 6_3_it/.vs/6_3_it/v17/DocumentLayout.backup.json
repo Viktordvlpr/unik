@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49500435-81A6-47EA-8FDC-52F61ADEB58E}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{49500435-81A6-47EA-8FDC-52F61ADEB58E}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CC99C995-0C0F-438E-87E8-BCAC5CA55EA4}|6_3_it\\6_3_it.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\6_3_it\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CC99C995-0C0F-438E-87E8-BCAC5CA55EA4}|6_3_it\\6_3_it.vcxproj|solutionrelative:6_3_it\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49500435-81A6-47EA-8FDC-52F61ADEB58E}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49500435-81A6-47EA-8FDC-52F61ADEB58E}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\UnitTest1\\UnitTest1.cpp",
               "RelativeDocumentMoniker": "UnitTest1\\UnitTest1.cpp",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\UnitTest1\\UnitTest1.cpp",
               "RelativeToolTip": "UnitTest1\\UnitTest1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T22:59:46.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\6_3_it\\Source.cpp",
               "RelativeDocumentMoniker": "6_3_it\\Source.cpp",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\unik\\6_3_it\\6_3_it\\Source.cpp",
               "RelativeToolTip": "6_3_it\\Source.cpp",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwC8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T22:54:03.257Z",
               "EditorCaption": ""

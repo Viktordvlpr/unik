@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\unik\\5_5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB4AE4A1-712A-45F4-B5BC-C40EB627DCD1}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\5_5\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AB4AE4A1-712A-45F4-B5BC-C40EB627DCD1}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9750BD17-115F-4C45-80B3-E7DCEED48EEF}|5_5\\5_5.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\5_5\\5_5\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9750BD17-115F-4C45-80B3-E7DCEED48EEF}|5_5\\5_5.vcxproj|solutionrelative:5_5\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4AE4A1-712A-45F4-B5BC-C40EB627DCD1}|UnitTest1\\UnitTest1.vcxproj|C:\\Users\\Admin\\Desktop\\unik\\5_5\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB4AE4A1-712A-45F4-B5BC-C40EB627DCD1}|UnitTest1\\UnitTest1.vcxproj|solutionrelative:UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\5_5\\UnitTest1\\UnitTest1.cpp",
               "RelativeDocumentMoniker": "UnitTest1\\UnitTest1.cpp",
@@ -35,7 +35,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\unik\\5_5\\5_5\\Source.cpp",
               "RelativeDocumentMoniker": "5_5\\Source.cpp",

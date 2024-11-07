@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  UnitTest1.cpp
+C:\Users\Admin\Desktop\unik\10_2\10_2\Source.cpp(165,80): warning C4018: '<': signed/unsigned mismatch
+  (compiling source file '/UnitTest1.cpp')
+  
+     Creating library C:\Users\Admin\Desktop\unik\10_2\x64\Debug\UnitTest1.lib and object C:\Users\Admin\Desktop\unik\10_2\x64\Debug\UnitTest1.exp
+  UnitTest1.vcxproj -> C:\Users\Admin\Desktop\unik\10_2\x64\Debug\UnitTest1.dll

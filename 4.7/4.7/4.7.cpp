@@ -1,14 +1,13 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+
 using namespace std;
 
-int main() {
-    setlocale(LC_ALL, "RU");
-    double xp, xk, x, dx, eps, a = 0, R = 0, S = 0;
+int main()
+{
+    double xp, xk, x, dx, eps, a = 0, S = 0;
     int n = 0;
-
-
 
 
     cout << "xp = "; cin >> xp;
@@ -17,24 +16,32 @@ int main() {
     cout << "eps = "; cin >> eps;
 
     cout << fixed;
-    cout << "-------------------------------------------------" << endl;
-    cout << "|" << setw(5) << "x" << " |"
+    cout << "-----------------------------------------" << endl;
+    cout << "|" << setw(5) << "x" << "   |"
         << setw(10) << "ln(x)" << " |"
         << setw(10) << "S" << " |"
         << setw(5) << "n" << " |" << endl;
-    cout << "-------------------------------------------------" << endl;
+    cout << "-----------------------------------------" << endl;
 
     x = xp;
-    while (x <= xk) {
+
+    while (x <= xk)
+    {
+        if (x <= 0 || x > 2)
+        {
+            cout << "Error: x must be in the range (0, 2]" << endl;
+            break;
+        }
+
         n = 0;
-        a = x - 1;  
-        S = a;      
+        a = x - 1;
+        S = a;
         do {
             n++;
-            R = -(x - 1) / (n + 1); // ðåêóðñ³ÿ ñïâ³õââ³äíîøåøÿ
+            double R = -1.0 * (x - 1) * n / (n + 1);
             a *= R;
             S += a;
-        } while (fabs(a) >= eps); //ô³í³ø
+        } while (fabs(a) >= eps);
 
 
         cout << "|" << setw(7) << setprecision(2) << x << " |"
@@ -45,6 +52,6 @@ int main() {
         x += dx;
     }
 
-    cout << "-------------------------------------------------" << endl;
+    cout << "-----------------------------------------" << endl;
     return 0;
 }
